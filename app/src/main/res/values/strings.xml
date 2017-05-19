@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WhatsNext</string>
+    <string name="task_name">Task (MAX length: 17)</string>
+    <string name="note">Add note (MAX length: 21)</string>
+</resources>
