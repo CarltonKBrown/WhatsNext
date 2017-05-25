@@ -7,7 +7,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v4.app.NotificationCompat;
 
-public class AlertReciever extends BroadcastReceiver{
+import static android.support.v4.app.NotificationCompat.*;
+
+public class AlertReceiver extends BroadcastReceiver{
     @Override
     public void onReceive(Context context, Intent intent) {
 
@@ -17,7 +19,7 @@ public class AlertReciever extends BroadcastReceiver{
     public void createNotification(Context context, String msg, String msgText, String msgAlert){
         PendingIntent notificIntent = PendingIntent.getActivity(context, 0,
                 new Intent(context, MainActivity.class), 0);
-        NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(context)
+        Builder mBuilder = new Builder(context)
                 .setSmallIcon(R.drawable.alarm_system)
                 .setContentTitle(msg)
                 .setTicker(msgAlert)

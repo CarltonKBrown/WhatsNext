@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
                 abuilder.setView(mView);
                 final AlertDialog dialog = abuilder.create();
 
-                final Intent alertIntent = new Intent(MainActivity.this, AlertReciever.class);
+                final Intent alertIntent = new Intent(MainActivity.this, AlertReceiver.class);
                 final AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
 
                 Button cancelBtn = (Button) mView.findViewById(R.id.Cancel);
