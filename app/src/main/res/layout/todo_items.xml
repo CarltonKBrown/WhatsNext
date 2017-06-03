@@ -16,10 +16,11 @@
         android:id="@+id/delete_task"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
+        android:onClick="editTask"
+        android:text="Edit"
+        android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:onClick="deleteTask"
-        android:text="Done" />
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:text="Time"

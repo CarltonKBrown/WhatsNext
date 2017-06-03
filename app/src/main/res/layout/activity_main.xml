@@ -14,5 +14,5 @@
     <ListView
         android:id="@+id/todo_list"
         android:layout_width="wrap_content"
-        android:layout_height="499dp" />
+        android:layout_height="499dp"/>
 </LinearLayout>

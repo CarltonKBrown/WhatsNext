@@ -3,7 +3,9 @@ package com.example.carva.whatsnext;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
@@ -21,8 +23,9 @@ public class TaskAdapter extends ArrayAdapter<Task>{
     }
 
 
-    public View getView(int position, View convertView, ViewGroup parent){
-        View v = convertView;
+    public View getView(final int position, View convertView, final ViewGroup parent){
+         View v = convertView;
+        final View x = convertView;
 
         if( v == null) {
             LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -53,4 +56,5 @@ public class TaskAdapter extends ArrayAdapter<Task>{
         }
         return v;
     }
+
 }

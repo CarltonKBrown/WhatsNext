@@ -14,6 +14,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
@@ -53,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
         mTaskListView= (ListView) findViewById(R.id.todo_list);
 
         updateGUI();
+
     }
 
     @Override
@@ -366,5 +368,12 @@ public class MainActivity extends AppCompatActivity {
 
         //calls method to update View
         updateGUI();
+    }
+
+    public void editTask(View view){
+        //View parent = (View) view.getParent();
+        Intent intent = new Intent(MainActivity.this, EditTaskActivity.class);
+        startActivity(intent);
+        Toast.makeText(MainActivity.this,"It click enuh",Toast.LENGTH_SHORT).show();
     }
 }
